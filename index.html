@@ -71,30 +71,42 @@
         </div>
       </div>
     </main>
-    <form>
-      <fieldset>
-        <legend>Entre em contato</legend>
-        <div class="input-wrapper">
-          <img src="img/person.svg" alt=" digite Seu nome aqui" />
-          <label for="name">Seu nome</label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div class="input-wrapper">
-          <img src="img/at.svg" alt=" digite Seu nome aqui" />
-          <label for="name">Email</label>
-          <input type="email" name="name" id="name" />
-        </div>
-        <div class="input-wrapper">
-          <img src="img/person.svg" alt=" digite Seu email aqui" />
-          <label for="mensagem">Digite sua mensagem</label>
-          <textarea name="mensagem" id="mensage" cols="30" rows="10">
-Digite sua mensagem aqui...</textarea
-          >
-        </div>
-      </fieldset>
-    </form>
+    <article>
+      <form>
+        <fieldset>
+          <legend>Entre em contato</legend>
+          <div class="input-wrapper">
+            <input autocomplete="off" type="text" name="name" id="name" />
+            <div class="label">
+              <img src="img/person.svg" alt=" digite Seu nome aqui" />
+              <label for="name">Seu nome</label>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <input autocomplete="off" type="email" name="email" id="name" />
+            <div class="label">
+              <img src="img/at.svg" alt=" digite Seu nome aqui" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <textarea
+              name="mensagem"
+              id="mensage"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="label">
+              <label for="mensagem">Digite sua mensagem</label>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+      <img src="/img/bg.png" alt="estrelas" class="bg-estrelas" />
+    </article>
     <footer>
-      © 2023 - Rocketseat Explorer
+      <p>© 2023 - Rocketseat Explorer</p>
     </footer>
   </body>
 </html>
